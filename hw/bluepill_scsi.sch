@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -192,19 +192,17 @@ Wire Wire Line
 Wire Wire Line
 	3550 2050 3550 1950
 Wire Wire Line
-	3350 2150 4250 2150
-Wire Wire Line
-	4250 2150 4250 2300
+	3350 2150 4150 2150
 $Comp
 L power:GND #PWR0104
 U 1 1 5F05BD87
-P 4250 2300
-F 0 "#PWR0104" H 4250 2050 50  0001 C CNN
-F 1 "GND" H 4255 2127 50  0000 C CNN
-F 2 "" H 4250 2300 50  0001 C CNN
-F 3 "" H 4250 2300 50  0001 C CNN
-	1    4250 2300
-	1    0    0    -1  
+P 4150 2150
+F 0 "#PWR0104" H 4150 1900 50  0001 C CNN
+F 1 "GND" H 4155 1977 50  0000 C CNN
+F 2 "" H 4150 2150 50  0001 C CNN
+F 3 "" H 4150 2150 50  0001 C CNN
+	1    4150 2150
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3.3V #PWR0106
@@ -217,20 +215,16 @@ F 3 "" H 3550 1950 50  0001 C CNN
 	1    3550 1950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1600 3750 900  3750
-Wire Wire Line
-	900  3750 900  3650
 $Comp
 L power:+3.3V #PWR0107
 U 1 1 5F05ECF2
-P 900 3650
-F 0 "#PWR0107" H 900 3500 50  0001 C CNN
-F 1 "+3.3V" H 915 3823 50  0000 C CNN
-F 2 "" H 900 3650 50  0001 C CNN
-F 3 "" H 900 3650 50  0001 C CNN
-	1    900  3650
-	1    0    0    -1  
+P 1200 3750
+F 0 "#PWR0107" H 1200 3600 50  0001 C CNN
+F 1 "+3.3V" H 1215 3923 50  0000 C CNN
+F 2 "" H 1200 3750 50  0001 C CNN
+F 3 "" H 1200 3750 50  0001 C CNN
+	1    1200 3750
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	1600 2850 1150 2850
@@ -1032,10 +1026,10 @@ F 3 "~" H 3400 5850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0112
 U 1 1 60659E21
 P 8250 1000
-F 0 "#PWR?" H 8250 850 50  0001 C CNN
+F 0 "#PWR0112" H 8250 850 50  0001 C CNN
 F 1 "VCC" H 8265 1173 50  0000 C CNN
 F 2 "" H 8250 1000 50  0001 C CNN
 F 3 "" H 8250 1000 50  0001 C CNN
@@ -1044,4 +1038,58 @@ F 3 "" H 8250 1000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8250 1000 8250 1100
+$Sheet
+S 4600 5700 1250 950 
+U 60A49332
+F0 "Blue_Pill_Clone" 50
+F1 "Blue_Pill_Clone.sch" 50
+$EndSheet
+Text GLabel 3900 2350 2    50   Input ~ 0
+SCSI_DAT1
+Text GLabel 3900 2450 2    50   Input ~ 0
+SCSI_DAT0
+Text GLabel 3900 2550 2    50   Input ~ 0
+SCSI_IO
+Text GLabel 3900 2650 2    50   Input ~ 0
+SCSI_REQ
+Text GLabel 3900 2750 2    50   Input ~ 0
+SCSI_CD
+Text GLabel 3900 2850 2    50   Input ~ 0
+SCSI_SEL
+Text GLabel 3900 2950 2    50   Input ~ 0
+SCSI_MSG
+Text GLabel 3900 3050 2    50   Input ~ 0
+SCSI_RST
+Text GLabel 3900 3350 2    50   Input ~ 0
+SCSI_ACK
+Text GLabel 3900 3450 2    50   Input ~ 0
+SCSI_BSY
+Text GLabel 3900 3550 2    50   Input ~ 0
+SCSI_ATN
+Text GLabel 3900 3650 2    50   Input ~ 0
+SCSI_DAT7
+Text GLabel 3900 3750 2    50   Input ~ 0
+SCSI_DAT6
+Text GLabel 3900 3850 2    50   Input ~ 0
+SCSI_DAT5
+Text GLabel 3900 3950 2    50   Input ~ 0
+SCSI_DAT4
+Text GLabel 1150 2850 0    50   Input ~ 0
+SD_CS
+Text GLabel 1150 2950 0    50   Input ~ 0
+SD_CLK
+Text GLabel 1150 3050 0    50   Input ~ 0
+SD_MISO
+Text GLabel 1150 3150 0    50   Input ~ 0
+SD_MISO
+Text GLabel 1150 3250 0    50   Input ~ 0
+SCSI_DATP
+Text GLabel 1150 3450 0    50   Input ~ 0
+SCSI_DAT2
+Text GLabel 1150 3550 0    50   Input ~ 0
+SCSI_DAT3
+Wire Wire Line
+	1200 3750 1600 3750
+Text GLabel 1150 2150 0    50   Input ~ 0
+DBG_LED
 $EndSCHEMATC
