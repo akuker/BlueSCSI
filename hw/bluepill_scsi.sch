@@ -255,28 +255,13 @@ SD_CS
 $Comp
 L power:+3.3V #PWR014
 U 1 1 5F08F209
-P 7800 4150
-F 0 "#PWR014" H 7800 4000 50  0001 C CNN
-F 1 "+3.3V" H 7800 4300 50  0000 C CNN
-F 2 "" H 7800 4150 50  0001 C CNN
-F 3 "" H 7800 4150 50  0001 C CNN
-	1    7800 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8550 4350 7950 4350
-Wire Wire Line
-	7950 4350 7950 4600
-$Comp
-L power:GND #PWR016
-U 1 1 5F092548
-P 7950 4600
-F 0 "#PWR016" H 7950 4350 50  0001 C CNN
-F 1 "GND" H 7955 4427 50  0000 C CNN
-F 2 "" H 7950 4600 50  0001 C CNN
-F 3 "" H 7950 4600 50  0001 C CNN
-	1    7950 4600
-	1    0    0    -1  
+P 8150 4150
+F 0 "#PWR014" H 8150 4000 50  0001 C CNN
+F 1 "+3.3V" V 8150 4400 50  0000 C CNN
+F 2 "" H 8150 4150 50  0001 C CNN
+F 3 "" H 8150 4150 50  0001 C CNN
+	1    8150 4150
+	0    -1   -1   0   
 $EndComp
 $Comp
 L bluepill_scsi-rescue:BluePill_STM32F103C-bluepill U3
@@ -483,49 +468,17 @@ Wire Wire Line
 	6150 3150 6700 3150
 Text Label 6250 3150 0    50   ~ 0
 SCSI_MSG
-Wire Wire Line
-	8550 4150 7800 4150
-$Comp
-L Device:Jumper JP1
-U 1 1 5F9B37AA
-P 7900 1400
-F 0 "JP1" H 7650 1450 50  0000 R CNN
-F 1 "TERM_ENABLE_GND" H 8250 1550 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7900 1400 50  0001 C CNN
-F 3 "~" H 7900 1400 50  0001 C CNN
-F 4 "https://www.mouser.com/ProductDetail/872-920-0011-01" H 7900 1400 50  0001 C CNN "Mouser"
-F 5 "https://www.mouser.com/ProductDetail/151-8001-E" H 7900 1400 50  0001 C CNN "Mouser_1"
-	1    7900 1400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:Jumper JP2
-U 1 1 5F9B5280
-P 8150 1400
-F 0 "JP2" H 7900 1450 50  0000 R CNN
-F 1 "TERM_ENABLE_5V" H 8450 1550 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8150 1400 50  0001 C CNN
-F 3 "~" H 8150 1400 50  0001 C CNN
-F 4 "https://www.mouser.com/ProductDetail/872-920-0011-01" H 8150 1400 50  0001 C CNN "Mouser"
-F 5 "https://www.mouser.com/ProductDetail/151-8001-E" H 8150 1400 50  0001 C CNN "Mouser_1"
-	1    8150 1400
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR015
 U 1 1 5F9B6506
-P 7900 1000
-F 0 "#PWR015" H 7900 750 50  0001 C CNN
-F 1 "GND" H 7905 827 50  0000 C CNN
-F 2 "" H 7900 1000 50  0001 C CNN
-F 3 "" H 7900 1000 50  0001 C CNN
-	1    7900 1000
+P 7950 1150
+F 0 "#PWR015" H 7950 900 50  0001 C CNN
+F 1 "GND" V 7950 950 50  0000 C CNN
+F 2 "" H 7950 1150 50  0001 C CNN
+F 3 "" H 7950 1150 50  0001 C CNN
+	1    7950 1150
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	7900 1000 7900 1100
-Wire Wire Line
-	7900 1800 7900 1700
 Wire Wire Line
 	5350 2250 5350 2450
 NoConn ~ 5650 2350
@@ -769,8 +722,6 @@ Text Label 8600 1550 1    50   ~ 0
 SCSI_REQ
 Text Label 8450 1550 1    50   ~ 0
 SCSI_IO
-NoConn ~ 8550 3850
-NoConn ~ 8550 4550
 $Comp
 L power:GND #PWR06
 U 1 1 5F9CFB24
@@ -810,10 +761,6 @@ Wire Wire Line
 Text Label 1150 2150 0    50   ~ 0
 LED
 Wire Wire Line
-	3150 5950 3150 6200
-Wire Wire Line
-	3500 5950 3500 6200
-Wire Wire Line
 	3150 6200 3350 6200
 Wire Wire Line
 	3350 6200 3350 6400
@@ -852,16 +799,14 @@ $EndComp
 $Comp
 L power:VCC #PWR017
 U 1 1 60659E21
-P 8150 1000
-F 0 "#PWR017" H 8150 850 50  0001 C CNN
-F 1 "VCC" H 8165 1173 50  0000 C CNN
-F 2 "" H 8150 1000 50  0001 C CNN
-F 3 "" H 8150 1000 50  0001 C CNN
-	1    8150 1000
+P 8050 1150
+F 0 "#PWR017" H 8050 1000 50  0001 C CNN
+F 1 "VCC" V 8050 1350 50  0000 C CNN
+F 2 "" H 8050 1150 50  0001 C CNN
+F 3 "" H 8050 1150 50  0001 C CNN
+	1    8050 1150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8150 1000 8150 1100
 $Sheet
 S 4600 5700 1250 950 
 U 60A49332
@@ -905,7 +850,7 @@ SD_CLK
 Text GLabel 1150 3050 0    50   Input ~ 0
 SD_MISO
 Text GLabel 1150 3150 0    50   Input ~ 0
-SD_MISO
+SD_MOSI
 Text GLabel 1150 3250 0    50   Input ~ 0
 SCSI_DATP
 Text GLabel 1150 3450 0    50   Input ~ 0
@@ -916,34 +861,6 @@ Wire Wire Line
 	1200 3750 1600 3750
 Text GLabel 1150 2150 0    50   Input ~ 0
 DBG_LED
-$Comp
-L Device:D_Small D?
-U 1 1 60AB6540
-P 3500 5850
-AR Path="/60A49332/60AB6540" Ref="D?"  Part="1" 
-AR Path="/60AB6540" Ref="D4"  Part="1" 
-F 0 "D4" H 3500 6057 50  0000 C CNN
-F 1 "SM4007PL" H 3500 5966 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" V 3500 5850 50  0001 C CNN
-F 3 "~" V 3500 5850 50  0001 C CNN
-F 4 "C64898" H 3500 5850 50  0001 C CNN "LCSC"
-	1    3500 5850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:D_Small D?
-U 1 1 60ABEEFA
-P 3150 5850
-AR Path="/60A49332/60ABEEFA" Ref="D?"  Part="1" 
-AR Path="/60ABEEFA" Ref="D3"  Part="1" 
-F 0 "D3" H 3150 6057 50  0000 C CNN
-F 1 "SM4007PL" H 3150 5966 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123F" V 3150 5850 50  0001 C CNN
-F 3 "~" V 3150 5850 50  0001 C CNN
-F 4 "C64898" H 3150 5850 50  0001 C CNN "LCSC"
-	1    3150 5850
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3500 5350 3500 5750
 Text Label 2000 6250 1    50   ~ 0
@@ -954,19 +871,6 @@ Text Label 3150 5750 1    50   ~ 0
 BERG_5V
 Wire Wire Line
 	3150 5350 3150 5750
-$Comp
-L power:+5V #PWR05
-U 1 1 60B58ABB
-P 3700 6250
-F 0 "#PWR05" H 3700 6100 50  0001 C CNN
-F 1 "+5V" H 3715 6423 50  0000 C CNN
-F 2 "" H 3700 6250 50  0001 C CNN
-F 3 "" H 3700 6250 50  0001 C CNN
-	1    3700 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8150 1700 8250 1700
 $Comp
 L Device:R_Small R12
 U 1 1 60A8C1CE
@@ -1185,8 +1089,6 @@ F 4 "C22962" H 11000 1050 50  0001 C CNN "LCSC"
 $EndComp
 Wire Wire Line
 	11000 950  10850 950 
-Wire Wire Line
-	8250 950  8250 1700
 Connection ~ 8450 950 
 Wire Wire Line
 	8450 950  8250 950 
@@ -1455,9 +1357,6 @@ F 4 "C23138" H 11000 1900 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7900 1800 8450 1800
-Connection ~ 8450 1800
-Wire Wire Line
 	8450 1800 8600 1800
 Connection ~ 8600 1800
 Wire Wire Line
@@ -1507,4 +1406,214 @@ Wire Wire Line
 Connection ~ 10850 1800
 Wire Wire Line
 	10850 1800 11000 1800
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 60B1271B
+P 8050 3950
+AR Path="/60A49332/60B1271B" Ref="TP?"  Part="1" 
+AR Path="/60B1271B" Ref="TP9"  Part="1" 
+F 0 "TP9" H 8098 3950 50  0000 L CNN
+F 1 "TestPoint_Small" H 8098 3905 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8250 3950 50  0001 C CNN
+F 3 "~" H 8250 3950 50  0001 C CNN
+	1    8050 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 60B5D2A1
+P 8050 3850
+AR Path="/60A49332/60B5D2A1" Ref="TP?"  Part="1" 
+AR Path="/60B5D2A1" Ref="TP8"  Part="1" 
+F 0 "TP8" H 8098 3850 50  0000 L CNN
+F 1 "TestPoint_Small" H 8098 3805 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8250 3850 50  0001 C CNN
+F 3 "~" H 8250 3850 50  0001 C CNN
+	1    8050 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 60B67CC1
+P 8050 4050
+AR Path="/60A49332/60B67CC1" Ref="TP?"  Part="1" 
+AR Path="/60B67CC1" Ref="TP10"  Part="1" 
+F 0 "TP10" H 8098 4050 50  0000 L CNN
+F 1 "TestPoint_Small" H 8098 4005 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8250 4050 50  0001 C CNN
+F 3 "~" H 8250 4050 50  0001 C CNN
+	1    8050 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 60B72683
+P 8050 4250
+AR Path="/60A49332/60B72683" Ref="TP?"  Part="1" 
+AR Path="/60B72683" Ref="TP11"  Part="1" 
+F 0 "TP11" H 8098 4250 50  0000 L CNN
+F 1 "TestPoint_Small" H 8098 4205 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8250 4250 50  0001 C CNN
+F 3 "~" H 8250 4250 50  0001 C CNN
+	1    8050 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 60B7D49D
+P 8050 4450
+AR Path="/60A49332/60B7D49D" Ref="TP?"  Part="1" 
+AR Path="/60B7D49D" Ref="TP12"  Part="1" 
+F 0 "TP12" H 8098 4450 50  0000 L CNN
+F 1 "TestPoint_Small" H 8098 4405 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8250 4450 50  0001 C CNN
+F 3 "~" H 8250 4450 50  0001 C CNN
+	1    8050 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 60B87F1C
+P 8050 4550
+AR Path="/60A49332/60B87F1C" Ref="TP?"  Part="1" 
+AR Path="/60B87F1C" Ref="TP13"  Part="1" 
+F 0 "TP13" H 8098 4550 50  0000 L CNN
+F 1 "TestPoint_Small" H 8098 4505 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8250 4550 50  0001 C CNN
+F 3 "~" H 8250 4550 50  0001 C CNN
+	1    8050 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 60BB2D62
+P 8100 4350
+F 0 "#PWR0102" H 8100 4100 50  0001 C CNN
+F 1 "GND" V 8100 4150 50  0000 C CNN
+F 2 "" H 8100 4350 50  0001 C CNN
+F 3 "" H 8100 4350 50  0001 C CNN
+	1    8100 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8550 4150 8150 4150
+Wire Wire Line
+	8550 4350 8100 4350
+Wire Wire Line
+	8550 4550 8050 4550
+Wire Wire Line
+	8550 3850 8050 3850
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 60C20095
+P 7950 4850
+AR Path="/60A49332/60C20095" Ref="TP?"  Part="1" 
+AR Path="/60C20095" Ref="TP6"  Part="1" 
+F 0 "TP6" H 7998 4850 50  0000 L CNN
+F 1 "TestPoint_Small" H 7998 4805 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8150 4850 50  0001 C CNN
+F 3 "~" H 8150 4850 50  0001 C CNN
+	1    7950 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0103
+U 1 1 60C413BB
+P 8150 4850
+F 0 "#PWR0103" H 8150 4700 50  0001 C CNN
+F 1 "+3.3V" V 8150 5100 50  0000 C CNN
+F 2 "" H 8150 4850 50  0001 C CNN
+F 3 "" H 8150 4850 50  0001 C CNN
+	1    8150 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 60C63397
+P 8150 5000
+F 0 "#PWR0104" H 8150 4750 50  0001 C CNN
+F 1 "GND" V 8150 4800 50  0000 C CNN
+F 2 "" H 8150 5000 50  0001 C CNN
+F 3 "" H 8150 5000 50  0001 C CNN
+	1    8150 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP?
+U 1 1 60C78D77
+P 7950 5000
+AR Path="/60A49332/60C78D77" Ref="TP?"  Part="1" 
+AR Path="/60C78D77" Ref="TP7"  Part="1" 
+F 0 "TP7" H 7998 5000 50  0000 L CNN
+F 1 "TestPoint_Small" H 7998 4955 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8150 5000 50  0001 C CNN
+F 3 "~" H 8150 5000 50  0001 C CNN
+	1    7950 5000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7950 4850 8150 4850
+Wire Wire Line
+	8150 5000 7950 5000
+$Comp
+L Device:D_Schottky D4
+U 1 1 60CC0FDF
+P 3500 5900
+F 0 "D4" H 3500 6025 50  0000 C CNN
+F 1 "D_Schottky" H 3500 6026 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3500 5900 50  0001 C CNN
+F 3 "~" H 3500 5900 50  0001 C CNN
+F 4 "C8598" H 3500 5900 50  0001 C CNN "LCSC"
+	1    3500 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D3
+U 1 1 60CCE2EF
+P 3150 5900
+F 0 "D3" H 3150 6025 50  0000 C CNN
+F 1 "D_Schottky" H 3150 6026 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 3150 5900 50  0001 C CNN
+F 3 "~" H 3150 5900 50  0001 C CNN
+F 4 "C8598" H 3150 5900 50  0001 C CNN "LCSC"
+	1    3150 5900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 6050 3150 6200
+Wire Wire Line
+	3500 6050 3500 6200
+$Comp
+L power:VCC #PWR0105
+U 1 1 60D27F6B
+P 3700 6250
+F 0 "#PWR0105" H 3700 6100 50  0001 C CNN
+F 1 "VCC" H 3715 6423 50  0000 C CNN
+F 2 "" H 3700 6250 50  0001 C CNN
+F 3 "" H 3700 6250 50  0001 C CNN
+	1    3700 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J1
+U 1 1 60DB11E9
+P 7950 1350
+F 0 "J1" V 8000 1550 50  0000 R CNN
+F 1 "Conn_02x02_Odd_Even" V 7955 1162 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 7950 1350 50  0001 C CNN
+F 3 "~" H 7950 1350 50  0001 C CNN
+	1    7950 1350
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8050 1650 8050 1700
+Wire Wire Line
+	8050 1700 8250 1700
+Wire Wire Line
+	8250 950  8250 1700
+Wire Wire Line
+	7950 1650 7950 1800
+Wire Wire Line
+	7950 1800 8450 1800
+Connection ~ 8450 1800
 $EndSCHEMATC
